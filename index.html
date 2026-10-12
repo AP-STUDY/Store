@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AP STORE - Your next favorite app, one tap away</title>
+<meta name="description" content="AP STORE by AP STUDY MODS. Your next favorite app, one tap away.">
+<meta name="theme-color" content="#01875f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AP STORE">
+<meta property="og:description" content="Your next favorite app, one tap away.">
+<meta property="og:image" content="assets/icon-512.png">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div id="splash" aria-hidden="true"><img src="assets/logo.png" alt=""><p>AP STORE</p></div>
+
+<header class="top">
+  <div class="wrap hd">
+    <a class="brand" href="#/" aria-label="AP STORE home"><img src="assets/logo.png" alt=""><span>AP STORE</span></a>
+    <div class="sw">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 14 15.5l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+      <input id="q" type="search" placeholder="Search apps" autocomplete="off" aria-label="Search apps">
+      <div id="sug" role="listbox"></div>
+    </div>
+    <button class="chip pwa" id="pwa" hidden>Install app</button>
+    <button class="ib" id="tm" aria-label="Switch theme">◐</button>
+  </div>
+  <nav class="dn" aria-label="Main"><div class="wrap" id="dnav"></div></nav>
+</header>
+
+<main class="wrap" id="view" tabindex="-1"></main>
+
+<footer>
+  <div class="wrap">
+    <div class="ad" data-ad="footer"></div>
+    <div class="fbrand"><img src="assets/logo.png" alt=""><div><b>AP STORE</b><br><span id="ftag"></span></div></div>
+    <div class="fl">
+      <a href="#/about">About</a>
+      <a href="https://t.me/apstudymods" target="_blank" rel="noopener">AP STUDY MODS</a>
+      <a href="https://t.me/apstudymodsgroup" target="_blank" rel="noopener">AP STUDY MODS [GROUP]</a>
+      <a href="https://t.me/ultimateapkmods" target="_blank" rel="noopener">ULTIMATE APK MODS</a>
+      <a href="https://t.me/editvaultresources" target="_blank" rel="noopener">Edit Vault Resources</a>
+    </div>
+    <p>Found a problem with an app, or want one removed? Message us in the Telegram group.</p>
+    <p>&copy; <span id="yr"></span> AP STUDY MODS. All rights reserved.</p>
+  </div>
+</footer>
+
+<nav class="bn" id="bnav" aria-label="Main"></nav>
+
+<a class="fab" href="https://t.me/apstudymods" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.8 15.3l-.4 4.2c.6 0 .9-.3 1.2-.6l2.9-2.7 6 4.4c1.1.6 1.9.3 2.2-1L23.9 4.5c.4-1.6-.6-2.2-1.6-1.8L1.2 10.8c-1.5.6-1.5 1.5-.3 1.9l5.4 1.7L18.9 6.5c.6-.4 1.1-.2.7.2z"/></svg>
+  Join Telegram
+</a>
+<button class="btt" id="btt" aria-label="Back to top">↑</button>
+
+<div class="md" id="md" role="dialog" aria-modal="true" aria-labelledby="mdt">
+  <div class="bx">
+    <h3 id="mdt">Join the AP STUDY MODS community</h3>
+    <p>Get new apps, updates and help from the team.</p>
+    <div class="tg" id="mdtg"></div>
+    <button class="btn ol x" id="mdx">Maybe later</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script src="js/install.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Colour tokens, light and dark */
+:root{
+  --bg:#ffffff;--sf:#f1f3f4;--sf2:#e8eaed;--tx:#1f1f1f;--mt:#5f6368;--ln:#dadce0;
+  --ac:#01875f;--ac2:#00a86b;--on:#ffffff;--card:#ffffff;--hd:rgba(255,255,255,.86);
+  --star:#f9ab00;--tgc:#229ed9;
+  --sh:0 1px 2px rgba(60,64,67,.16),0 2px 8px rgba(60,64,67,.10);
+  --sh2:0 10px 32px rgba(0,0,0,.20);
+  --r:16px;
+}
+[data-theme=dark]{
+  --bg:#121314;--sf:#1e1f21;--sf2:#2a2c2e;--tx:#e8eaed;--mt:#9aa0a6;--ln:#3c4043;
+  --ac:#5bd6a6;--ac2:#34c797;--on:#00382a;--card:#1a1b1d;--hd:rgba(18,19,20,.86);
+  --sh:0 1px 2px rgba(0,0,0,.5),0 2px 8px rgba(0,0,0,.4);
+  --sh2:0 10px 32px rgba(0,0,0,.6);
+}
